@@ -12,6 +12,7 @@ namespace D_Sante.Models
         public ApplicationDbContext()
             : base("DefaultConnection")
         {
+            int h = 5;
         }
     }
 }
