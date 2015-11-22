@@ -5,10 +5,7 @@ using System.Web;
 
 namespace D_Sante.Models.HealthServices
 {
-    public abstract class HealthService
+    public abstract class MedicalProduct : HealthService
     {
-        public int Id { get; set; }
-        public string Nom { get; set; }
-
     }
 }
