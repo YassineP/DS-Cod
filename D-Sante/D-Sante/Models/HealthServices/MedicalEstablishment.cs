@@ -7,8 +7,8 @@ namespace D_Sante.Models.HealthServices
 {
     public abstract class MedicalEstablishment : HealthService
     {
-        public string Ville;
-        public string Adresse;
+        public string Town { get; set; }
+        public string Address { get; set; }
 
     }
 }
