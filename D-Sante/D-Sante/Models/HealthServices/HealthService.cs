@@ -8,6 +8,8 @@ namespace D_Sante.Models.HealthServices
     public abstract class HealthService
     {
         public int Id { get; set; }
-        public string Nom { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+
     }
 }

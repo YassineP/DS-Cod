@@ -10,5 +10,6 @@ namespace D_Sante.Models.Persitance
     {
         public DbSet<Drug> Medicaments { get; set; }
         public DbSet<Hospital> Hospitals { get; set; }
+       
     }
 }

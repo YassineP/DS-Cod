@@ -169,6 +169,7 @@
     <Compile Include="Models\HealthServices\Drug.cs" />
     <Compile Include="Models\HealthServices\HealthService.cs" />
     <Compile Include="Models\HealthServices\Hospital.cs" />
+    <Compile Include="Models\HealthServices\Laboratory.cs" />
     <Compile Include="Models\HealthServices\MedicalEstablishment.cs" />
     <Compile Include="Models\HealthServices\MedicalProduct.cs" />
     <Compile Include="Models\Persitance\IDal.cs" />

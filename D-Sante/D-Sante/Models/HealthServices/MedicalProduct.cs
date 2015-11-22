@@ -7,5 +7,7 @@ namespace D_Sante.Models.HealthServices
 {
     public abstract class MedicalProduct : HealthService
     {
+        public float Price { get; set; }
+       
     }
 }
