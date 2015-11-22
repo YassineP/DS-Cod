@@ -9,6 +9,5 @@ namespace D_Sante.Models.HealthServices
     {
         public int Id { get; set; }
         public string Nom { get; set; }
-
     }
 }
