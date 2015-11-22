@@ -171,6 +171,8 @@
     <Compile Include="Models\HealthServices\Hospital.cs" />
     <Compile Include="Models\HealthServices\MedicalEstablishment.cs" />
     <Compile Include="Models\HealthServices\MedicalProduct.cs" />
+    <Compile Include="Models\Persitance\IDal.cs" />
+    <Compile Include="Models\Persitance\IDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
