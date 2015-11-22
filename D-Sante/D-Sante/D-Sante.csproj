@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{03378DE7-6D73-41EB-90EC-6353148AD09D}</ProjectGuid>
+    <ProjectGuid>{2C489A7B-23C4-4522-9D32-0C3A9BF794D0}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -166,11 +166,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\HealthServices\Drug.cs" />
+    <Compile Include="Models\HealthServices\Medicament.cs" />
     <Compile Include="Models\HealthServices\HealthService.cs" />
     <Compile Include="Models\HealthServices\Hospital.cs" />
     <Compile Include="Models\HealthServices\MedicalEstablishment.cs" />
     <Compile Include="Models\HealthServices\MedicalProduct.cs" />
+    <Compile Include="Models\Persitance\Dal.cs" />
     <Compile Include="Models\Persitance\IDal.cs" />
     <Compile Include="Models\Persitance\IDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

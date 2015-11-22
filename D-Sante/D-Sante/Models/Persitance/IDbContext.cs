@@ -8,7 +8,7 @@ namespace D_Sante.Models.Persitance
 {
     public class IDbContext : DbContext
     {
-        public DbSet<Drug> Medicaments { get; set; }
+        public DbSet<Medicament> Medicaments { get; set; }
         public DbSet<Hospital> Hospitals { get; set; }
     }
 }
