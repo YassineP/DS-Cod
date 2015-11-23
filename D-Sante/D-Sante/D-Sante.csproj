@@ -169,8 +169,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\DataFromWeb\GetDataFromWeb.cs" />
-    <Compile Include="Models\DataFromWeb\IGetData.cs" />
+    <Compile Include="Models\DataFromSource\GetDataFromWeb.cs" />
+    <Compile Include="Models\DataFromSource\IGetData.cs" />
     <Compile Include="Models\HealthServices\Medicament.cs" />
     <Compile Include="Models\HealthServices\HealthService.cs" />
     <Compile Include="Models\HealthServices\Hospital.cs" />

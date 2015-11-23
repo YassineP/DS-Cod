@@ -5,7 +5,7 @@ using System.Web;
 using D_Sante.Models.HealthServices;
 using HtmlAgilityPack;
 
-namespace D_Sante.Models.DataFromWeb
+namespace D_Sante.Models.DataFromSource
 {
     public class GetDataFromWeb : IGetData
     {
@@ -39,7 +39,7 @@ namespace D_Sante.Models.DataFromWeb
                     medicament.Composition = attrs[2];
                     //medicament.Price = float.Parse()
                     list.Add(medicament);
-                    return null;
+                    return list;
                 }
             }
             catch (Exception e)
@@ -49,6 +49,11 @@ namespace D_Sante.Models.DataFromWeb
             Console.WriteLine("----------------------------------------------");
             Console.WriteLine("Search is end");
             return list;
+        }
+
+        public  List<Hospital> GetHospitals()
+        {
+            return null;
         }
     }
 }
