@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using D_Sante.Models.HealthServices;
+
 namespace D_Sante.Models.Persistance
 {
     public class DBContext : DbContext

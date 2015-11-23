@@ -7,6 +7,5 @@ namespace D_Sante.Models.HealthServices
 {
     public class Hospital : MedicalEstablishment
     {
-
     }
 }

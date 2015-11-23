@@ -8,5 +8,6 @@ namespace D_Sante.Models.HealthServices
     public class Medicament : MedicalProduct
     {
         public string Form { get; set; }
+        //public virtual Laboratory Laboratory;
     }
 }
