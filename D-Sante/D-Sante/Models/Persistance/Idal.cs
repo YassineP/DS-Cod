@@ -12,7 +12,7 @@ namespace D_Sante.Models.Persistance
         //Medicaments
         void CreateMedicament(Medicament M);
         List<Medicament> ReadMedicaments();
-        void UpdateMedicament(Medicament M);
+        void UpdateMedicament(Medicament M); 
         void DeleteMedicament(int Id);
         //Hospitals
         //void CreateHospital(Dictionary<string, string> Attrs);
