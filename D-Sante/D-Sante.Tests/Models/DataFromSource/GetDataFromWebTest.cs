@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using D_Sante.Models.HealthServices;
-using D_Sante.Models.DataFromWeb;
+using D_Sante.Models.DataFromSource;
 
 namespace D_Sante.Tests.Models.DataFromWeb
 {

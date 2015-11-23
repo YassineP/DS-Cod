@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{090A117A-A380-4360-A348-B8FB81953D7C}</ProjectGuid>
+    <ProjectGuid>{785C9EEA-D63B-4B24-8E23-0ADAA5AD8C30}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>D_Sante.Tests</RootNamespace>
