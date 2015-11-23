@@ -39,7 +39,6 @@ namespace D_Sante.Models.DataFromSource
                     medicament.Composition = attrs[2];
                     //medicament.Price = float.Parse()
                     list.Add(medicament);
-                    return list;
                 }
             }
             catch (Exception e)
@@ -50,16 +49,12 @@ namespace D_Sante.Models.DataFromSource
             Console.WriteLine("Search is end");
             return list;
         }
-<<<<<<< HEAD:D-Sante/D-Sante/Models/DataFromWeb/GetDataFromWeb.cs
-        public void GetHospitals()
-        {
 
-=======
 
         public  List<Hospital> GetHospitals()
         {
             return null;
->>>>>>> origin/master:D-Sante/D-Sante/Models/DataFromSource/GetDataFromWeb.cs
+
         }
     }
 }
