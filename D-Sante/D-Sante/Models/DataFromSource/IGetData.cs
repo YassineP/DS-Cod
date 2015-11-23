@@ -10,6 +10,6 @@ namespace D_Sante.Models.DataFromSource
     interface IGetData
     {
         List<Medicament> GetMedicaments();
-        List<Hospital> GetHospitals();
+        void GetHospitals();
     }
 }
