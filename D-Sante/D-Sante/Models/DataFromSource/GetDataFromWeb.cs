@@ -9,7 +9,7 @@ namespace D_Sante.Models.DataFromSource
 {
     public class GetDataFromWeb : IGetData
     {
-         private HtmlWeb getHtmlWeb;
+        private HtmlWeb getHtmlWeb;
         public List<Medicament> GetMedicaments()
         {
             List<Medicament> list = new List<Medicament>();
@@ -30,7 +30,7 @@ namespace D_Sante.Models.DataFromSource
                     i = 0;
                     drugInfo = getHtmlWeb.Load(item.GetAttributeValue("href", ""));
                     medicament = new Medicament();
-                    medicament.Name =  drugInfo.DocumentNode.SelectSingleNode("//legend").InnerText;
+                    medicament.Name = drugInfo.DocumentNode.SelectSingleNode("//legend").InnerText;
                     foreach (var info in drugInfo.DocumentNode.SelectNodes("//table/tr/td[@class='value']"))
                     {
                         attrs[i++] = info.InnerText;
@@ -39,6 +39,7 @@ namespace D_Sante.Models.DataFromSource
                     medicament.Composition = attrs[2];
                     //medicament.Price = float.Parse()
                     list.Add(medicament);
+                    return list;
                 }
             }
             catch (Exception e)
@@ -50,10 +51,9 @@ namespace D_Sante.Models.DataFromSource
             return list;
         }
 
-
-        public  List<Hospital> GetHospitals()
+        public void GetHospitals()
         {
-            return null;
+
 
         }
     }
