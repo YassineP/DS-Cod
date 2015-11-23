@@ -50,5 +50,9 @@ namespace D_Sante.Models.DataFromWeb
             Console.WriteLine("Search is end");
             return list;
         }
+        public void GetHospitals()
+        {
+
+        }
     }
 }
