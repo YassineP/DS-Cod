@@ -10,10 +10,10 @@ namespace D_Sante.Models.Persistance
     public interface IDal : IDisposable
     {
         //Medicaments
-        void CreateMedicament(Dictionary<string, string> Attrs);
+        void CreateMedicament(Medicament M);
         List<Medicament> ReadMedicaments();
-        void UpdateMedicament(Dictionary<string, string> Attrs);
-        void DeleteMedicament(Dictionary<string, string> Attrs);
+        void UpdateMedicament(Medicament M);
+        void DeleteMedicament(int Id);
         //Hospitals
         void CreateHospital(Hospital hospital);
         Hospital SelectHospitalById(int Id);
@@ -21,6 +21,5 @@ namespace D_Sante.Models.Persistance
         void UpdateHospital(Hospital hospital);
         void DeleteHospital(Hospital hospital);
         void DeleteHospitalById(int Id);
-
     }
 }

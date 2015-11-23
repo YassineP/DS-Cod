@@ -2,6 +2,8 @@
 using D_Sante.Models.Persistance;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Objects;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
@@ -21,15 +23,27 @@ namespace D_Sante.Models.Persistance
         {
             return Db.Medicaments.ToList();
         }
-        public void CreateMedicament(Dictionary<string, string> Attrs)
+        public void CreateMedicament(Medicament M)
         {
-           
+            Db.Medicaments.Add(M);
+            Db.SaveChanges();
         }
+        public void DeleteMedicament(int Id)
+        {
+              
+            Db.Medicaments.Remove(Db.Medicaments.Find(Id));
+            Db.SaveChanges();
+        }
+        public void UpdateMedicament(Medicament M)
+        {
+            Medicament Med=Db.Medicaments.Find(M.Id);
+            Med.Name = M.Name;
+            Med.Price = M.Price;
+            Med.Description = M.Description;
+            Med.Form = M.Form;
+            Db.SaveChanges();
 
-        public void UpdateMedicament(Dictionary<string, string> Attrs){ }
-
-        public void DeleteMedicament(Dictionary<string, string> Attrs) { }
-        //Hospitals
+        }
         public void CreateHospital(Hospital hospital)
         {
             Db.Hospitals.Add(hospital);
@@ -51,10 +65,10 @@ namespace D_Sante.Models.Persistance
 
 
 
-        public void DeleteHospital(Hospital hospital) 
+        public void DeleteHospital(Hospital hospital)
         {
-           Db.Hospitals.Remove(hospital);
-           Db.SaveChanges();
+            Db.Hospitals.Remove(hospital);
+            Db.SaveChanges();
         }
 
         public void DeleteHospitalById(int Id)
@@ -63,11 +77,10 @@ namespace D_Sante.Models.Persistance
             Db.SaveChanges();
         }
 
-        public List<Hospital> ReadHospitals() 
-        { 
-            return Db.Hospitals.ToList(); 
+        public List<Hospital> ReadHospitals()
+        {
+            return Db.Hospitals.ToList();
         }
-
         public void Dispose()
         {
             Db.Dispose();
